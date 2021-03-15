@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/findPhase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyText"
+        android:layout_alignLeft="@id/copyText"
+        android:layout_marginRight="10dp"
+        android:text="@string/find_phase"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/ButtomColor"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@id/copyText" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyText"
+        android:layout_alignEnd="@id/copyText"
+        android:layout_alignRight="@id/copyText"
+        android:layout_toEndOf="@id/findPhase"
+        android:layout_toRightOf="@id/findPhase"
+        android:text="@string/reset"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/ButtomColor" />
+        <TableRow
+            android:id="@+id/horizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/findPhase"
+            android:background="#E6DCDC"
+            />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/horizontalLine"
+        android:hint="@string/place_for_text_from_clipboard"
+        android:paddingHorizontal="20dp"
+        android:gravity="top"
+        />
+    <Button
+        android:id="@+id/copyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/copy_text_from_clipboard"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/ButtomColor" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-30dp"
+        android:contentDescription="@string/Phase"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>

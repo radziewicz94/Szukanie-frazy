@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SzukanieFrazy</string>
+    <string name="Phase">Phase</string>
+    <string name="copy_text_from_clipboard">COPY TEXT FROM CLIPBOARD</string>
+    <string name="reset">RESET</string>
+    <string name="find_phase">FIND PHASE</string>
+    <string name="place_for_text_from_clipboard">Place for text from clipboard</string>
+</resources>
